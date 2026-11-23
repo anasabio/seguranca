@@ -14,7 +14,7 @@ public class Servidor {
         System.setProperty("javax.net.ssl.keyStore", "servidor.jks");
         System.setProperty("javax.net.ssl.keyStore");
 
-        ExecutorService pool = Executors.newFixedThreadPool(MAX_CLIENTS);
+        ExecutorService pool = Executors.newFixedThreadPool();
         Logger.log("Iniciando o servidor...");
 
         try {
