@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Cliente {
     public static void main(String[] args) {
         System.setProperty("javax.net.ssl.trustStore", "servidor.jks");
-        System.setProperty("javax.net.ssl.trustStorePassword", "senha123");
+        System.setProperty("javax.net.ssl.trustStorePassword");
 
         try {
             SSLSocketFactory factory = (SSLSocketFactory) SSLSocketFactory.getDefault();
